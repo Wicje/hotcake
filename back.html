@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DNA Authority - Founder Ghostwriting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600;700;900&display=swap');
+        
+        :root {
+            --electric-red: #FF1F1F;
+            --electric-red-dim: #991313;
+            --obsidian: #050505;
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background-color: var(--obsidian);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Neon Glow Utilities */
+        .text-glow {
+            text-shadow: 0 0 20px rgba(255, 31, 31, 0.6);
+        }
+        
+        .text-glow-sm {
+            text-shadow: 0 0 10px rgba(255, 31, 31, 0.4);
+        }
+
+        .border-glow {
+            box-shadow: 0 0 15px rgba(255, 31, 31, 0.15), inset 0 0 10px rgba(255, 31, 31, 0.05);
+        }
+
+        .border-glow:hover {
+            box-shadow: 0 0 25px rgba(255, 31, 31, 0.3), inset 0 0 15px rgba(255, 31, 31, 0.1);
+            border-color: rgba(255, 31, 31, 0.6);
+        }
+
+        .btn-electric {
+            background: var(--electric-red);
+            box-shadow: 0 0 20px rgba(255, 31, 31, 0.4);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-electric:hover {
+            box-shadow: 0 0 40px rgba(255, 31, 31, 0.6);
+            transform: translateY(-1px);
+        }
+
+        /* Circuit Background */
+        .bg-grid-pattern {
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .scan-line {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--electric-red), transparent);
+            opacity: 0.5;
+            animation: scan 4s linear infinite;
+        }
+
+        @keyframes scan {
+            0% { transform: translateY(0) translateX(-100%); }
+            50% { opacity: 1; }
+            100% { transform: translateY(0) translateX(100%); }
+        }
+
+        .animate-pulse-slow {
+            animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+</head>
+<body class="bg-background text-foreground antialiased selection:bg-primary selection:text-white" data-ray-id="ri3l67">
+
+    <!-- Nav -->
+    <nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/5" data-ray-id="ahvmhi">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between" data-ray-id="bp2fio">
+            <div class="flex items-center gap-2" data-ray-id="2iw5gw">
+                <div class="w-2 h-8 bg-primary animate-pulse" data-ray-id="1f3twd"></div>
+                <span class="font-mono font-bold text-xl tracking-tighter text-white" data-ray-id="iydfnx">DNA.AUTHORITY</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground" data-ray-id="1fb3rz">
+                <a href="#signals" class="hover:text-primary transition-colors" data-ray-id="1r9j2b">Signals</a>
+                <a href="#method" class="hover:text-primary transition-colors" data-ray-id="t1jgwb">Method</a>
+                <a href="#proof" class="text-primary font-bold drop-shadow-[0_0_8px_rgba(255,31,31,0.5)]" data-ray-id="fntsxj">Declassified</a>
+                <a href="#pricing" class="hover:text-primary transition-colors" data-ray-id="jqbkzp">Pricing</a>
+            </div>
+            <a href="#" class="hidden md:flex items-center gap-2 font-mono text-xs border border-primary/30 px-4 py-2 rounded text-primary hover:bg-primary/10 transition-colors" data-ray-id="gxrm5z">
+                <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" data-ray-id="w5hn80"></span>
+                STATUS: ONLINE
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden" data-ray-id="jxop7n">
+        <!-- Background Effects -->
+        <div class="absolute inset-0 bg-grid-pattern opacity-30 z-0" data-ray-id="wepnyw"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/80 to-background z-0" data-ray-id="egcerq"></div>
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[128px] opacity-40 mix-blend-screen animate-pulse-slow" data-ray-id="h3vy4h"></div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center" data-ray-id="x8ir66">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/5 text-primary text-xs font-mono mb-8 uppercase tracking-widest" data-ray-id="vzftfc">
+                <span class="relative flex h-2 w-2" data-ray-id="xdpvju">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" data-ray-id="69bccc"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-primary" data-ray-id="vo107s"></span>
+                </span>
+                Ghost Mode Active
+            </div>
+            
+            <h1 class="text-6xl md:text-8xl font-black tracking-tighter text-white mb-8 leading-[0.9]" data-ray-id="0hl2fc">
+                You build the <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400" data-ray-id="xe11go">future.</span><br data-ray-id="7yqb18" />
+                We write the <span class="text-primary text-glow" data-ray-id="fagvdn">legend.</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed" data-ray-id="gef8sn">
+                Elite ghostwriting for technical founders. We extract your genius and deploy it as high-signal authority. <span class="text-white font-medium" data-ray-id="k61cqh">Zero time wasted.</span>
+            </p>
+
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6" data-ray-id="0csaem">
+                <a href="#" class="btn-electric text-white px-8 py-4 rounded-lg font-bold text-lg flex items-center gap-3 group" data-ray-id="dp67pb">
+                    Start Qualification
+                    <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="k4t8pc"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" data-ray-id="rhtgji"/></svg>
+                </a>
+                <a href="#proof" class="text-sm font-mono text-muted-foreground hover:text-white transition-colors flex items-center gap-2 border-b border-transparent hover:border-white pb-0.5" data-ray-id="nxwl5b">
+                    VIEW DECLASSIFIED FILES
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Ticker -->
+    <div class="border-y border-white/5 bg-white/[0.02] overflow-hidden py-6" data-ray-id="gzvx4g">
+        <div class="max-w-7xl mx-auto px-6 flex justify-center gap-12 md:gap-24 opacity-40 grayscale hover:grayscale-0 transition-all duration-500" data-ray-id="hnxuv4">
+            <!-- Simple text placeholders for logos to avoid image dependencies -->
+            <span class="text-xl font-bold font-mono tracking-widest text-white" data-ray-id="vmh7uz">Y COMBINATOR</span>
+            <span class="text-xl font-bold font-mono tracking-widest text-white" data-ray-id="yak2nb">SEQUOIA</span>
+            <span class="text-xl font-bold font-mono tracking-widest text-white" data-ray-id="r41bda">A16Z</span>
+            <span class="text-xl font-bold font-mono tracking-widest text-white" data-ray-id="h2owyl">FOUNDERS FUND</span>
+        </div>
+    </div>
+
+    <!-- Core Services (Bento Grid) -->
+    <section id="signals" class="py-24 relative" data-ray-id="sofbdl">
+        <div class="scan-line absolute top-0" data-ray-id="hd1qjh"></div>
+        
+        <div class="max-w-7xl mx-auto px-6" data-ray-id="4zwm8g">
+            <div class="mb-16" data-ray-id="qvzuc7">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4" data-ray-id="zpb373">Signal Generation</h2>
+                <p class="text-muted-foreground max-w-xl text-lg" data-ray-id="3f0rd1">We don't do "content marketing." We build intellectual property assets that compound.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]" data-ray-id="80iyse">
+                <!-- LinkedIn (Double Width) -->
+                <div class="md:col-span-2 group relative rounded-2xl border border-white/10 bg-white/[0.03] p-8 overflow-hidden border-glow transition-all" data-ray-id="m9nv02">
+                    <div class="absolute top-4 right-4 p-2 bg-white/5 rounded-lg" data-ray-id="5cbss4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" data-ray-id="wfbj9n"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" data-ray-id="t9kxv8"/></svg>
+                    </div>
+                    <div class="h-full flex flex-col justify-end" data-ray-id="86ib9v">
+                        <div class="mb-4 w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary" data-ray-id="1ttnwv">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="ktzge4"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" data-ray-id="3nfdva"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-primary transition-colors" data-ray-id="x888cw">Authority Architecture</h3>
+                        <p class="text-muted-foreground text-sm leading-relaxed max-w-md" data-ray-id="4ryc5d">LinkedIn is your new pitch deck. We engineer high-leverage thought leadership that attracts talent, investors, and customers while you sleep.</p>
+                    </div>
+                </div>
+
+                <!-- Twitter/X (Vertical) -->
+                <div class="md:row-span-2 group relative rounded-2xl border border-white/10 bg-white/[0.03] p-8 overflow-hidden border-glow transition-all" data-ray-id="c3ckq6">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity" data-ray-id="8oc24y"></div>
+                    <div class="absolute top-4 right-4 p-2 bg-white/5 rounded-lg" data-ray-id="6vnj0z">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" data-ray-id="19suxe"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" data-ray-id="yungw7"/></svg>
+                    </div>
+                    <div class="h-full flex flex-col" data-ray-id="8jqx5i">
+                        <h3 class="text-2xl font-bold text-white mb-2" data-ray-id="pcnxy7">Narrative Warfare</h3>
+                        <p class="text-muted-foreground text-sm mb-8" data-ray-id="9idzz1">Twitter/X is where narratives are born. We craft viral threads and punchy insights that dominate the feed.</p>
+                        
+                        <!-- Visual representation of a thread -->
+                        <div class="mt-auto space-y-3 opacity-60 group-hover:opacity-100 transition-opacity duration-500" data-ray-id="3jp7q0">
+                            <div class="p-3 rounded bg-white/5 border-l-2 border-white/20 text-xs text-gray-400" data-ray-id="di3zpx">
+                                "Most founders fail because they build products, not movements..."
+                            </div>
+                            <div class="p-3 rounded bg-white/5 border-l-2 border-white/20 text-xs text-gray-400 ml-4" data-ray-id="xuexfo">
+                                "Here is the 3-step framework we used to scale to $10M ARR..."
+                            </div>
+                            <div class="p-3 rounded bg-white/5 border-l-2 border-white/20 text-xs text-gray-400 ml-8" data-ray-id="au81my">
+                                "Thread continued..."
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Investor Updates -->
+                <div class="group relative rounded-2xl border border-white/10 bg-white/[0.03] p-8 overflow-hidden border-glow transition-all" data-ray-id="y4i18e">
+                    <div class="h-full flex flex-col justify-end" data-ray-id="aejwjz">
+                        <div class="mb-4 w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-400" data-ray-id="y20qth">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="ocbctx"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" data-ray-id="trs7gv"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2" data-ray-id="86jzg7">Capital Narratives</h3>
+                        <p class="text-muted-foreground text-sm" data-ray-id="z3pgjf">Investor updates that get replied to. Keep your cap table engaged and ready for the next round.</p>
+                    </div>
+                </div>
+
+                <!-- The Method Link -->
+                <div class="group relative rounded-2xl border border-primary/20 bg-primary/5 p-8 overflow-hidden border-glow transition-all hover:bg-primary/10 cursor-pointer" data-ray-id="6tv2go">
+                    <div class="h-full flex flex-col justify-center items-center text-center" data-ray-id="98edzs">
+                        <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform duration-300" data-ray-id="xxpmo8">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="xhq1u3"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" data-ray-id="8ej1ar"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2" data-ray-id="i11uf8">The DNA Method</h3>
+                        <p class="text-primary text-xs font-mono uppercase tracking-widest flex items-center gap-2" data-ray-id="05al81">
+                            Explore Process
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="c29iz3"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" data-ray-id="wcp3ur"/></svg>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Method Section -->
+    <section id="method" class="py-24 border-t border-white/5 relative overflow-hidden" data-ray-id="op922t">
+        <div class="absolute inset-0 bg-black/50 z-0" data-ray-id="2cyjp9"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10" data-ray-id="fn4ds9">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center" data-ray-id="8y3zcu">
+                <div data-ray-id="5k3dpn">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6" data-ray-id="10ih2l">We are the Ghost in <span class="text-primary text-glow-sm" data-ray-id="ot0ur7">Your Machine.</span></h2>
+                    <p class="text-muted-foreground text-lg mb-10" data-ray-id="o6bidi">Traditional agencies need hours of your time. We need minutes. Using proprietary voice capture workflows, we extract your raw thoughts and refine them into gold.</p>
+                    
+                    <div class="space-y-8" data-ray-id="rcywpo">
+                        <div class="flex gap-4 group" data-ray-id="iy4wn1">
+                            <div class="flex-shrink-0 w-8 h-8 rounded bg-white/10 flex items-center justify-center font-mono font-bold text-white group-hover:bg-primary group-hover:text-black transition-colors" data-ray-id="6nglrg">1</div>
+                            <div data-ray-id="4lvhqz">
+                                <h4 class="text-white font-bold mb-1" data-ray-id="9uvfuh">Input: Voice Note</h4>
+                                <p class="text-sm text-muted-foreground" data-ray-id="kvbgfk">You record a 5-minute remote voice note on Loom or WhatsApp about a problem you solved.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 group" data-ray-id="iz77es">
+                            <div class="flex-shrink-0 w-8 h-8 rounded bg-white/10 flex items-center justify-center font-mono font-bold text-white group-hover:bg-primary group-hover:text-black transition-colors" data-ray-id="i4yx7v">2</div>
+                            <div data-ray-id="fer6dz">
+                                <h4 class="text-white font-bold mb-1" data-ray-id="qcdxmq">Process: The Black Box</h4>
+                                <p class="text-sm text-muted-foreground" data-ray-id="bfo467">Our technical writers (ex founders &amp; PMs) synthesize, structure, and polish.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 group" data-ray-id="uf4i1y">
+                            <div class="flex-shrink-0 w-8 h-8 rounded bg-white/10 flex items-center justify-center font-mono font-bold text-white group-hover:bg-primary group-hover:text-black transition-colors" data-ray-id="dm801p">3</div>
+                            <div data-ray-id="yns9uo">
+                                <h4 class="text-white font-bold mb-1" data-ray-id="cks7iq">Output: Authority</h4>
+                                <p class="text-sm text-muted-foreground" data-ray-id="qfmh6w">You get a ready-to-ship LinkedIn post, Twitter thread, and newsletter draft.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual: Code/Audio processing -->
+                <div class="relative rounded-xl border border-white/10 bg-[#0a0a0a] p-6 shadow-2xl" data-ray-id="w5jqmw">
+                    <div class="absolute -top-4 -right-4 bg-primary text-black text-xs font-bold px-2 py-1 rounded font-mono" data-ray-id="96sgy1">VOICE_STREAM_V2.WAV</div>
+                    
+                    <!-- Audio Waveform Visual -->
+                    <div class="flex items-center justify-center gap-1 h-32 mb-6" data-ray-id="pwz8nx">
+                        <div class="w-1 h-8 bg-primary/20 animate-pulse" data-ray-id="v91gep"></div>
+                        <div class="w-1 h-12 bg-primary/40 animate-pulse delay-75" data-ray-id="e79h28"></div>
+                        <div class="w-1 h-6 bg-primary/20 animate-pulse delay-100" data-ray-id="porha7"></div>
+                        <div class="w-1 h-16 bg-primary animate-pulse delay-150" data-ray-id="vob23u"></div>
+                        <div class="w-1 h-24 bg-primary text-glow animate-pulse delay-200" data-ray-id="zhbcj8"></div>
+                        <div class="w-1 h-12 bg-primary/60 animate-pulse delay-300" data-ray-id="pyncb8"></div>
+                        <div class="w-1 h-4 bg-primary/20 animate-pulse delay-75" data-ray-id="pgllo2"></div>
+                        <div class="w-1 h-10 bg-primary/30 animate-pulse delay-100" data-ray-id="9khj3p"></div>
+                    </div>
+
+                    <!-- Code Output -->
+                    <div class="font-mono text-xs space-y-2 text-green-400 bg-black/50 p-4 rounded border border-white/5" data-ray-id="eg0tqt">
+                        <div class="flex gap-2" data-ray-id="y2n68x">
+                            <span class="text-gray-500" data-ray-id="txt605">01</span>
+                            <span data-ray-id="ricp3u">&gt; Analyzing semantic structure...</span>
+                        </div>
+                        <div class="flex gap-2" data-ray-id="6ps2jf">
+                            <span class="text-gray-500" data-ray-id="e3amhg">02</span>
+                            <span data-ray-id="37z6pb">&gt; Extracting key insights...</span>
+                        </div>
+                        <div class="flex gap-2" data-ray-id="1porpm">
+                            <span class="text-gray-500" data-ray-id="tighy7">03</span>
+                            <span data-ray-id="3mrimq">&gt; Generating hook variations...</span>
+                        </div>
+                        <div class="flex gap-2 text-primary animate-pulse" data-ray-id="hsja6j">
+                            <span class="text-gray-500" data-ray-id="2b5mf2">04</span>
+                            <span data-ray-id="cqkht8">&gt; SIGNAL DETECTED.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Declassified Files (Proof) - REDESIGNED PER REQUEST -->
+    <section id="proof" class="py-24 relative bg-black" data-ray-id="1i8qlo">
+        <div class="absolute inset-0 bg-grid-pattern opacity-10" data-ray-id="vp8ij3"></div>
+        <div class="max-w-7xl mx-auto px-6" data-ray-id="blyzxf">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4" data-ray-id="bu1bbh">
+                <div data-ray-id="ieqen7">
+                    <h2 class="text-4xl font-black text-white mb-2" data-ray-id="7xf0ez">Declassified Files</h2>
+                    <p class="text-muted-foreground" data-ray-id="b9s9es">From raw brain dump to viral asset. See the transformation.</p>
+                </div>
+                <div class="font-mono text-xs text-primary animate-pulse" data-ray-id="54c3nm">
+                    LIVE_EXAMPLES // DATABASE_ACCESS_GRANTED
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-white/10 rounded-2xl overflow-hidden bg-[#080808]" data-ray-id="znbhm7">
+                <!-- Left: The Boring Ramble -->
+                <div class="p-8 md:p-12 border-b lg:border-b-0 lg:border-r border-white/10 bg-[#0a0a0a] relative group" data-ray-id="31sgyw">
+                    <div class="absolute top-4 left-4 text-[10px] font-mono text-gray-600 tracking-widest uppercase border border-gray-800 px-2 py-1 rounded" data-ray-id="58psqd">
+                        Raw_Input.mp3
+                    </div>
+                    
+                    <div class="mt-8 opacity-60 transition-opacity group-hover:opacity-40" data-ray-id="g9bxsk">
+                        <h3 class="font-mono text-gray-500 text-sm mb-4" data-ray-id="yag7vb">TRANSCRIPT [UNEDITED]</h3>
+                        <div class="font-serif text-gray-400 text-lg leading-relaxed italic border-l-2 border-gray-800 pl-6" data-ray-id="ak4t84">
+                            "Um, so honestly, the issue we had yesterday with the ingestion engine... it was a nightmare. We realized the Python service just couldn't handle the concurrency. It’s frustrating because investors want features, but we're drowning in tech debt. We basically had to rewrite the core in Rust over the weekend. Deleted a ton of legacy code. It works better now, revenue is up, but yeah... super stressful few days."
+                        </div>
+                        <div class="mt-6 flex items-center gap-3" data-ray-id="e5369i">
+                            <div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center" data-ray-id="fiyr5e">
+                                <svg class="w-3 h-3 text-gray-500" fill="currentColor" viewBox="0 0 24 24" data-ray-id="k1tqah"><path d="M8 5v14l11-7z" data-ray-id="xm36s8"/></svg>
+                            </div>
+                            <div class="h-1 flex-1 bg-gray-800 rounded-full overflow-hidden" data-ray-id="zqqcya">
+                                <div class="w-1/3 h-full bg-gray-600" data-ray-id="7lkt9f"></div>
+                            </div>
+                            <span class="text-xs font-mono text-gray-600" data-ray-id="1ghnh4">00:42 / 03:15</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: The Viral Signal -->
+                <div class="p-8 md:p-12 bg-gradient-to-br from-[#0a0a0a] to-[#110505] relative overflow-hidden group" data-ray-id="9z1o89">
+                    <!-- Glow effect -->
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-[80px]" data-ray-id="r42jz5"></div>
+                    
+                    <div class="relative z-10" data-ray-id="tyjtpr">
+                        <div class="flex justify-between items-center mb-6" data-ray-id="nn8k99">
+                            <div class="flex items-center gap-2 text-primary text-xs font-mono font-bold uppercase tracking-widest" data-ray-id="x758fe">
+                                <span class="w-2 h-2 bg-primary rounded-full animate-pulse" data-ray-id="cdwt5b"></span>
+                                The Signal
+                            </div>
+                            <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 24 24" data-ray-id="35cvir"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" data-ray-id="mpzqc0"/></svg>
+                        </div>
+
+                        <!-- The Post Card -->
+                        <div class="bg-white/[0.03] border border-white/10 rounded-xl p-6 shadow-2xl border-glow backdrop-blur-sm" data-ray-id="zlhxa4">
+                            <div class="flex items-center gap-3 mb-4" data-ray-id="qv0krc">
+                                <div class="w-10 h-10 rounded-full bg-gray-700" data-ray-id="9kati1"></div>
+                                <div data-ray-id="ov1evt">
+                                    <div class="h-3 w-24 bg-gray-700 rounded mb-1" data-ray-id="8yk81d"></div>
+                                    <div class="h-2 w-16 bg-gray-800 rounded" data-ray-id="muokhy"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- The Hook -->
+                            <h4 class="text-xl md:text-2xl font-bold text-white mb-4 leading-tight" data-ray-id="ozpec3">
+                                We deleted <span class="text-primary bg-primary/10 px-1" data-ray-id="p8kbqf">40,000 lines of code</span> yesterday. <br data-ray-id="2jbgc6" />
+                                And our revenue doubled.
+                            </h4>
+                            
+                            <!-- The Story -->
+                            <div class="space-y-3 text-gray-300 text-sm leading-relaxed" data-ray-id="yamstk">
+                                <p data-ray-id="p6btr9">Most founders hoard features like dragon gold. We were drowning in technical debt, shipping slower than a sloth in molasses.</p>
+                                <p data-ray-id="i73868">The hard choice? <span class="text-white font-medium" data-ray-id="as0qll">Burning the bridge.</span></p>
+                                <p data-ray-id="a607wy">We rewrote the ingestion engine in Rust over 48 hours.</p>
+                                <ul class="list-disc pl-4 space-y-1 text-gray-400" data-ray-id="sme1u1">
+                                    <li data-ray-id="9ct5r2">Latency dropped 90%</li>
+                                    <li data-ray-id="viv8au">Cloud bill slashed by half</li>
+                                    <li data-ray-id="v6970k">Churn vanished overnight</li>
+                                </ul>
+                                <p class="pt-2 font-medium text-white" data-ray-id="rjl96b">Stop building features. Start building velocity. 🚀</p>
+                            </div>
+
+                            <!-- Engagement Stats -->
+                            <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-gray-500 font-mono" data-ray-id="gs9ntp">
+                                <div class="flex gap-4" data-ray-id="nwyfvh">
+                                    <span class="flex items-center gap-1 text-white" data-ray-id="hoxaf1"><svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20" data-ray-id="6ec5jp"><path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z" data-ray-id="ohj3zy"/></svg> 842</span>
+                                    <span class="flex items-center gap-1" data-ray-id="gm9h0c"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="qb2zf1"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-3.582 8-8 8a8.066 8.066 0 01-3.658-.876L2.342 21.658A.996.996 0 011.083 20.3l1.838-5.748A8.066 8.066 0 012 12c0-4.418 3.582-8 8-8s8 3.582 8 8z" data-ray-id="t4bmyi"/></svg> 124</span>
+                                    <span class="flex items-center gap-1" data-ray-id="bk2mem"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="x6d7h2"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" data-ray-id="lkjv1i"/></svg> 42</span>
+                                </div>
+                                <div class="text-green-400 font-bold bg-green-400/10 px-2 py-1 rounded" data-ray-id="z6vcm2">
+                                    +1,420% ENGAGEMENT
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-24 relative overflow-hidden" data-ray-id="h4pbt9">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-primary/5 opacity-20" data-ray-id="1fsc0s"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10" data-ray-id="02l1zw">
+            <div class="text-center mb-16" data-ray-id="o91b0k">
+                <h2 class="text-4xl font-bold text-white mb-4" data-ray-id="vskd2h">Transparent Investment</h2>
+                <p class="text-muted-foreground" data-ray-id="ygruth">No retainers that hide incompetence. Pause or cancel anytime.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto" data-ray-id="z1oyql">
+                <!-- Starter -->
+                <div class="p-8 rounded-2xl border border-white/10 bg-black/40 backdrop-blur-sm flex flex-col hover:border-white/30 transition-colors" data-ray-id="qp1cu3">
+                    <div class="mb-4" data-ray-id="0g24fw">
+                        <div class="w-10 h-1 bg-gray-700 rounded mb-4" data-ray-id="1kr9o1"></div>
+                        <h3 class="text-xl font-bold text-white" data-ray-id="xk2bz2">Starter</h3>
+                        <p class="text-xs text-muted-foreground mt-1" data-ray-id="r3g5iv">For solo founders testing the waters.</p>
+                    </div>
+                    <div class="mb-8" data-ray-id="98d6kv">
+                        <span class="text-4xl font-bold text-white" data-ray-id="xmoud5">$1,500</span><span class="text-muted-foreground" data-ray-id="gbxydx">/mo</span>
+                    </div>
+                    <button class="w-full py-3 rounded border border-white/20 text-white font-medium hover:bg-white/5 transition-colors mb-8" data-ray-id="40aatk">Start Trial</button>
+                    <ul class="space-y-4 text-sm text-gray-400 flex-1" data-ray-id="k3p486">
+                        <li class="flex items-center gap-2" data-ray-id="c4651n"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="52x28n"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" data-ray-id="9a09xa"/></svg> 4 LinkedIn Posts</li>
+                        <li class="flex items-center gap-2" data-ray-id="87469k"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="jjlhax"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" data-ray-id="i23vnk"/></svg> 1 Newsletter Draft</li>
+                        <li class="flex items-center gap-2" data-ray-id="bv9jck"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="5ktlh3"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" data-ray-id="txggpf"/></svg> Async Voice Input</li>
+                    </ul>
+                </div>
+
+                <!-- Authority (Featured) -->
+                <div class="p-8 rounded-2xl border border-primary bg-black/80 backdrop-blur-sm flex flex-col relative transform md:-translate-y-4 shadow-[0_0_40px_rgba(255,31,31,0.15)]" data-ray-id="kksgtx">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-lg border border-white/20" data-ray-id="zl17hn">Most Popular</div>
+                    <div class="mb-4" data-ray-id="lo3fig">
+                        <div class="w-10 h-1 bg-primary rounded mb-4 shadow-[0_0_10px_#FF1F1F]" data-ray-id="tlqmb4"></div>
+                        <h3 class="text-xl font-bold text-white" data-ray-id="ys8zgp">Authority</h3>
+                        <p class="text-xs text-gray-400 mt-1" data-ray-id="26f7i3">Full stack persona brand engine.</p>
+                    </div>
+                    <div class="mb-8" data-ray-id="3qgrvp">
+                        <span class="text-5xl font-bold text-white text-glow" data-ray-id="huevuf">$4,000</span><span class="text-muted-foreground" data-ray-id="chxgng">/mo</span>
+                    </div>
+                    <button class="w-full py-3 rounded bg-gradient-to-r from-primary to-red-600 text-white font-bold hover:shadow-[0_0_20px_rgba(255,31,31,0.5)] transition-all mb-8 border border-white/10" data-ray-id="8q7g6q">Get Started</button>
+                    <ul class="space-y-4 text-sm text-gray-300 flex-1" data-ray-id="3b5xkg">
+                        <li class="flex items-center gap-2" data-ray-id="8npzl3"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="tr7c5r"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" data-ray-id="3dknn0"/></svg> 12 LinkedIn Posts</li>
+                        <li class="flex items-center gap-2" data-ray-id="vl39aj"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="v5p2fa"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" data-ray-id="m84k02"/></svg> 4 Twitter Threads</li>
+                        <li class="flex items-center gap-2" data-ray-id="ptk78b"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="vckcjm"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" data-ray-id="ibo473"/></svg> 2 Deep Dive Newsletters</li>
+                        <li class="flex items-center gap-2" data-ray-id="6qrwwa"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="3jyh5e"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" data-ray-id="vs8bw1"/></svg> Monthly Strategy Call</li>
+                        <li class="flex items-center gap-2" data-ray-id="qo45v8"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="wwk380"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" data-ray-id="9nelnx"/></svg> Slack Access</li>
+                    </ul>
+                </div>
+
+                <!-- Fundraising -->
+                <div class="p-8 rounded-2xl border border-white/10 bg-black/40 backdrop-blur-sm flex flex-col hover:border-white/30 transition-colors" data-ray-id="uqw2g8">
+                    <div class="mb-4" data-ray-id="f6r0nr">
+                        <div class="w-10 h-1 bg-gray-700 rounded mb-4" data-ray-id="ymw9yv"></div>
+                        <h3 class="text-xl font-bold text-white" data-ray-id="txwdgi">Fundraising</h3>
+                        <p class="text-xs text-muted-foreground mt-1" data-ray-id="f000tw">For Series A/B prep.</p>
+                    </div>
+                    <div class="mb-8" data-ray-id="e5aqa3">
+                        <span class="text-4xl font-bold text-white" data-ray-id="cndrqc">Custom</span>
+                    </div>
+                    <button class="w-full py-3 rounded border border-white/20 text-white font-medium hover:bg-white/5 transition-colors mb-8" data-ray-id="0r8ikv">Book Call</button>
+                    <ul class="space-y-4 text-sm text-gray-400 flex-1" data-ray-id="9nskfs">
+                        <li class="flex items-center gap-2" data-ray-id="yy7uu2"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="lfr0gl"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" data-ray-id="uygo55"/></svg> Pitch Deck Narrative</li>
+                        <li class="flex items-center gap-2" data-ray-id="t7kg1h"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="osggdq"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" data-ray-id="beh345"/></svg> Investor Update Systems</li>
+                        <li class="flex items-center gap-2" data-ray-id="v97u0k"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="rapm96"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" data-ray-id="bdwht8"/></svg> Founder Origin Story Video</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-[#020202]" data-ray-id="6sjzqm">
+        <div class="max-w-3xl mx-auto px-6" data-ray-id="6kq031">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center flex items-center justify-center gap-3" data-ray-id="4fz58a">
+                Mission Intel <span class="text-xs font-mono text-muted-foreground bg-white/10 px-2 py-1 rounded" data-ray-id="3ugx59">// FAQ</span>
+            </h2>
+
+            <div class="space-y-4" data-ray-id="vovhgu">
+                <div class="border border-white/10 rounded-lg overflow-hidden bg-white/[0.02]" data-ray-id="9yh02r">
+                    <button class="w-full px-6 py-4 flex items-center justify-between text-left text-white hover:bg-white/5 transition-colors" data-ray-id="34f1o7">
+                        <span class="font-medium" data-ray-id="43uw0k">Will it sound like me?</span>
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="jc3yi5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" data-ray-id="29vo6g"/></svg>
+                    </button>
+                </div>
+                <div class="border border-white/10 rounded-lg overflow-hidden bg-white/[0.02]" data-ray-id="sl5urt">
+                    <button class="w-full px-6 py-4 flex items-center justify-between text-left text-white hover:bg-white/5 transition-colors" data-ray-id="5052bj">
+                        <span class="font-medium" data-ray-id="k7nrd2">How much time do I need?</span>
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="6rqg2p"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" data-ray-id="xl4krg"/></svg>
+                    </button>
+                </div>
+                <div class="border border-white/10 rounded-lg overflow-hidden bg-white/[0.02]" data-ray-id="bk7670">
+                    <button class="w-full px-6 py-4 flex items-center justify-between text-left text-white hover:bg-white/5 transition-colors" data-ray-id="4eclwr">
+                        <span class="font-medium" data-ray-id="04qzvf">Is my IP confidential?</span>
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="76kdj6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" data-ray-id="bcsvck"/></svg>
+                    </button>
+                </div>
+                <div class="border border-white/10 rounded-lg overflow-hidden bg-white/[0.02]" data-ray-id="zlod5m">
+                    <button class="w-full px-6 py-4 flex items-center justify-between text-left text-white hover:bg-white/5 transition-colors" data-ray-id="8zo1r5">
+                        <span class="font-medium" data-ray-id="fgnaeq">What if I don't have topics?</span>
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="5ig3du"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" data-ray-id="zni7k7"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/10 text-center" data-ray-id="z3yton">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6" data-ray-id="7iz9dk">
+            <span class="font-mono font-bold text-white text-sm" data-ray-id="e1up2z">DNA.AUTHORITY</span>
+            <div class="flex gap-8 text-xs text-muted-foreground font-mono" data-ray-id="h3cz6v">
+                <a href="#" class="hover:text-white" data-ray-id="j7u72p">Login</a>
+                <a href="#" class="hover:text-white" data-ray-id="dpgfww">Privacy</a>
+                <span data-ray-id="v8ez8i">© 2024 DNA Authority. All rights reserved. // SYSTEM READY</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

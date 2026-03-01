@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Initiate Protocol - DNA Authority</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+        
+        :root {
+            --electric-red: #FF1F1F;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+            color: #ffffff;
+        }
+
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .input-glow:focus {
+            box-shadow: 0 0 15px rgba(255, 31, 31, 0.2);
+            border-color: var(--electric-red);
+        }
+
+        /* Scanline effect */
+        .scanline {
+            background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.5) 50%);
+            background-size: 100% 4px;
+            pointer-events: none;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#050505',
+                        foreground: '#ffffff',
+                        primary: '#FF1F1F',
+                        muted: '#171717',
+                        'muted-foreground': '#a3a3a3',
+                    },
+                    animation: {
+                        'pulse-fast': 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-foreground min-h-screen flex items-center justify-center p-4 md:p-8 relative overflow-hidden" data-ray-id="smyaib">
+
+    <!-- Background Grid -->
+    <div class="absolute inset-0 z-0 pointer-events-none opacity-20" style="background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px); background-size: 40px 40px;" data-ray-id="7v0yvn">
+    </div>
+
+    <!-- Main Container -->
+    <div class="relative z-10 w-full max-w-5xl bg-black border border-white/10 rounded-xl shadow-2xl overflow-hidden flex flex-col md:flex-row h-[800px] md:h-[600px]" data-ray-id="nq99do">
+        
+        <!-- Left Panel: Status -->
+        <div class="w-full md:w-1/3 bg-muted/20 border-r border-white/10 p-8 flex flex-col justify-between relative overflow-hidden" data-ray-id="4vpte3">
+            <div class="absolute inset-0 bg-primary/5" data-ray-id="yyxbav"></div>
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" data-ray-id="n12i09"></div>
+
+            <div class="relative z-10" data-ray-id="cuij8i">
+                <div class="flex items-center gap-2 text-primary font-mono text-xs mb-8" data-ray-id="dtrp8k">
+                    <div class="w-2 h-2 bg-primary rounded-full animate-pulse-fast" data-ray-id="v2q5nq"></div>
+                    SYSTEM_STATUS: ONLINE
+                </div>
+                
+                <h1 class="text-3xl font-bold mb-4 tracking-tight" data-ray-id="5adbky">Initiate<br data-ray-id="hkz3kj" />Protocol</h1>
+                <p class="text-muted-foreground text-sm leading-relaxed mb-8" data-ray-id="ehdgs0">
+                    We accept less than <span class="text-white font-medium" data-ray-id="8665fa">5% of applicants</span>. Ensure your data is accurate before transmission.
+                </p>
+
+                <div class="space-y-4 font-mono text-xs text-muted-foreground/60" data-ray-id="v0ars6">
+                    <div class="flex justify-between border-b border-white/5 pb-2" data-ray-id="ieobeb">
+                        <span data-ray-id="v83ijd">ENCRYPTION</span>
+                        <span class="text-green-500" data-ray-id="gfq2f4">AES-256</span>
+                    </div>
+                    <div class="flex justify-between border-b border-white/5 pb-2" data-ray-id="mxku6r">
+                        <span data-ray-id="30mf9p">LATENCY</span>
+                        <span class="text-green-500" data-ray-id="3cgki8">12ms</span>
+                    </div>
+                    <div class="flex justify-between border-b border-white/5 pb-2" data-ray-id="ckk5no">
+                        <span data-ray-id="dp0s85">SERVER</span>
+                        <span class="text-white" data-ray-id="55hgyb">US-EAST-1</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative z-10 mt-auto" data-ray-id="vwb07h">
+                <div class="w-full bg-white/5 h-1 rounded overflow-hidden" data-ray-id="tbw6at">
+                    <div class="bg-primary h-full w-[35%]" data-ray-id="83ixz3"></div>
+                </div>
+                <div class="flex justify-between mt-2 text-[10px] font-mono text-muted-foreground uppercase" data-ray-id="66htjy">
+                    <span data-ray-id="rlxkpw">Step 1/3</span>
+                    <span data-ray-id="roqm8n">Identity Verification</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Panel: Form -->
+        <div class="w-full md:w-2/3 p-8 md:p-12 bg-black flex flex-col justify-center relative" data-ray-id="ui7h7u">
+            <div class="absolute top-0 right-0 p-4" data-ray-id="fgerie">
+                 <button class="text-muted-foreground hover:text-white transition-colors" data-ray-id="jm3na1">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="wri5e7"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" data-ray-id="3iy7cr"/></svg>
+                 </button>
+            </div>
+
+            <form class="space-y-8 max-w-md mx-auto w-full" data-ray-id="pwsnqi">
+                
+                <!-- Input Group 1 -->
+                <div class="space-y-2" data-ray-id="8cz1sm">
+                    <label class="block text-xs font-mono text-primary uppercase tracking-wider" data-ray-id="327wez">01 // LinkedIn Profile</label>
+                    <input type="text" placeholder="linkedin.com/in/founder" class="w-full bg-muted/30 border border-white/10 rounded px-4 py-3 text-white placeholder-muted-foreground/50 focus:outline-none input-glow transition-all font-mono text-sm" data-ray-id="y0bfre" />
+                </div>
+
+                <!-- Input Group 2 -->
+                <div class="space-y-2" data-ray-id="zrfwjn">
+                    <label class="block text-xs font-mono text-muted-foreground uppercase tracking-wider group-hover:text-primary transition-colors" data-ray-id="3ibzjq">02 // Current Stage</label>
+                    <div class="grid grid-cols-2 gap-4" data-ray-id="s0cw9u">
+                        <label class="cursor-pointer" data-ray-id="giobjf">
+                            <input type="radio" name="stage" class="peer sr-only" data-ray-id="smp2x1" />
+                            <div class="border border-white/10 rounded px-4 py-3 text-sm text-center text-muted-foreground peer-checked:bg-primary/10 peer-checked:border-primary peer-checked:text-primary transition-all hover:bg-white/5" data-ray-id="tzv2hs">
+                                Seed / Pre-Seed
+                            </div>
+                        </label>
+                        <label class="cursor-pointer" data-ray-id="ol178w">
+                            <input type="radio" name="stage" class="peer sr-only" data-ray-id="foeb0e" />
+                            <div class="border border-white/10 rounded px-4 py-3 text-sm text-center text-muted-foreground peer-checked:bg-primary/10 peer-checked:border-primary peer-checked:text-primary transition-all hover:bg-white/5" data-ray-id="6f5gkb">
+                                Series A+
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Input Group 3 -->
+                <div class="space-y-2" data-ray-id="3vg9qz">
+                    <label class="block text-xs font-mono text-muted-foreground uppercase tracking-wider" data-ray-id="grwmwp">03 // Primary Objective</label>
+                    <select class="w-full bg-muted/30 border border-white/10 rounded px-4 py-3 text-white focus:outline-none input-glow transition-all font-mono text-sm appearance-none cursor-pointer hover:bg-white/5" data-ray-id="d7vz59">
+                        <option data-ray-id="dre634">Fundraising Narrative</option>
+                        <option data-ray-id="9dej09">Talent Acquisition</option>
+                        <option data-ray-id="qfy8x9">Customer Acquisition</option>
+                        <option data-ray-id="r9eboh">Personal Branding</option>
+                    </select>
+                </div>
+
+                <div class="pt-4" data-ray-id="ufz49d">
+                    <button type="button" class="group w-full bg-white text-black font-bold py-4 rounded hover:bg-primary hover:text-white transition-all duration-300 flex items-center justify-center gap-2" data-ray-id="hovu24">
+                        <span class="tracking-widest uppercase text-sm" data-ray-id="di9unn">Transmitt Data</span>
+                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-ray-id="ogz9og"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" data-ray-id="fyikws"/></svg>
+                    </button>
+                    <p class="text-center text-[10px] text-muted-foreground mt-4 font-mono" data-ray-id="u4rip1">
+                        // SECURE CONNECTION ESTABLISHED
+                    </p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
